@@ -5,12 +5,19 @@ Yolov5_Deepsort_Trafiic/demo (1).mp4
 实现功能：
 
 1. 斑马线检测（opencv）
+
   斑马线检测（opencv-Canny边缘检测算法）
+  
   1、读取原图像并将图像灰度化
+  
   2、通过高斯滤波去除噪声信息
+  
   3、Canny梯度模
+  
   4、Canny梯度二值化
+  
   5、得到结果
+  
   ![image](https://user-images.githubusercontent.com/54696432/172031700-83a86a7b-bbc8-41fb-82e7-23c3e3e25635.png)
   ![image](https://user-images.githubusercontent.com/54696432/172031706-f3c272a0-9757-48cd-be6f-1fad75cdb2ed.png)
   ![image](https://user-images.githubusercontent.com/54696432/172031712-4522275c-d3da-4cd9-bf45-38eb5c02c012.png)
@@ -39,22 +46,34 @@ Yolov5_Deepsort_Trafiic/demo (1).mp4
 1. 代码中已有全部所需的网络结构
 
 2. 所用数据集如下
+
 基于yolov5s.pt进行训练
+
 BDD100K
+
 https://www.bdd100k.com/
+
 训练结果
 ![image](https://user-images.githubusercontent.com/54696432/172031921-edf666ec-4af6-49f0-b46b-e807e59a07dc.png)
 ![image](https://user-images.githubusercontent.com/54696432/172031924-43d672a5-6bf3-4f89-9992-9613729aef4e.png)
 
+
 车牌识别
+
 CCPD数据集
+
 CCPD(中国城市停车数据集，ECCV)和PDRC(车牌检测与识别挑战)。这是一个用于车牌识别的大型国内的数据集，由中科大的科研人员构建出来的。发表在ECCV2018论文Towards End-to-End License Plate Detection and Recognition: A Large Dataset and Baseline
+
 https://github.com/detectRecog/CCPD
 
 3.运行要求
+
 Python>=3.8
+
 安装所需包
+
 pip install -r requirements.txt
+
 运行main.py
 
 可能的改进：
