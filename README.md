@@ -1,4 +1,5 @@
 "# Yolov5_Deepsort_Trafiic" 
+
 实例视频：
 Yolov5_Deepsort_Trafiic/demo (1).mp4
 
@@ -6,17 +7,17 @@ Yolov5_Deepsort_Trafiic/demo (1).mp4
 
 1. 斑马线检测（opencv）
 
-  斑马线检测（opencv-Canny边缘检测算法）
+    斑马线检测（opencv-Canny边缘检测算法）
   
-  1、读取原图像并将图像灰度化
+    1、读取原图像并将图像灰度化
   
-  2、通过高斯滤波去除噪声信息
+    2、通过高斯滤波去除噪声信息
   
-  3、Canny梯度模
+    3、Canny梯度模
   
-  4、Canny梯度二值化
+    4、Canny梯度二值化
   
-  5、得到结果
+    5、得到结果
   
   ![image](https://user-images.githubusercontent.com/54696432/172031700-83a86a7b-bbc8-41fb-82e7-23c3e3e25635.png)
   ![image](https://user-images.githubusercontent.com/54696432/172031706-f3c272a0-9757-48cd-be6f-1fad75cdb2ed.png)
@@ -43,9 +44,10 @@ Yolov5_Deepsort_Trafiic/demo (1).mp4
 
 
 
-1. 代码中已有全部所需的网络结构
+PS：
+  1. 代码中已有全部所需的网络结构
 
-2. 所用数据集如下
+  2. 所用数据集如下
 
 基于yolov5s.pt进行训练
 
@@ -77,6 +79,9 @@ pip install -r requirements.txt
 运行main.py
 
 可能的改进：
+
 1.可以增加Ui界面，所有的条件都可以通过图形界面来设定，结果与图表的展示也可以更加直观。可以大大提高该系统的易用性，实用性与用户友好程度
+
 2.使用BDD100K数据集训练的模型对交通信号灯的识别效果较为一般，可以增加训练一个CNN之类的网络用于专门识别红绿灯，效果应该会更好
+
 3.当前的测速是一个单纯的像素到距离的线性映射，实际上由于监控镜头是固定的，我们可以计算出二维图片到三维世界的映射关系，这样得到的车速才更严谨可靠
